@@ -1,0 +1,29 @@
+{
+  "name": "bank-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marcus Smith",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "puppeteer": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.11.6",
+    "@types/puppeteer": "^1.12.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
+  }
+}
